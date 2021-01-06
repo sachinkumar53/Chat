@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.suke.widget.SwitchButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/switchButton"
+    android:layout_width="44dp"
+    android:layout_height="28dp"
+    android:clickable="false"
+    android:focusable="false"
+    app:sb_background="?android:textColorPrimaryInverse"
+    app:sb_checked_color="?colorAccent"
+    app:sb_show_indicator="false" />

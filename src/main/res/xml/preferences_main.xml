@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/general_header">
+
+        <com.sachin.app.chat.widget.SwitchPreference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_dark_mode_key"
+            app:summary="@string/pref_dark_mode_summary"
+            app:title="@string/pref_dark_mode_theme" />
+
+        <com.sachin.app.chat.widget.SwitchPreference
+            app:iconSpaceReserved="false"
+            app:title="Auto download media files" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/pref_about_app_key"
+            app:title="@string/pref_about_app_title" />̥
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

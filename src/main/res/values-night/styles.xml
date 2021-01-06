@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBasTheme">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

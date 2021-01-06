@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.ProfileActivity">
+
+    <FrameLayout
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:elevation="4dp"
+        app:layout_anchor="@id/cardView"
+        app:layout_anchorGravity="center_horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transition_shared_profile_image"
+            android:translationZ="8dp"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            app:srcCompat="@drawable/default_avatar"
+            tools:srcCompat="@drawable/photo" />
+
+        <ImageButton
+            android:id="@+id/fab_edit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/gradient_fab_mini"
+            android:elevation="18dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:tint="@android:color/white" />
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="User name" />
+
+            <TextView
+                android:id="@+id/profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                tools:text="Active now" />
+
+            <LinearLayout
+                android:id="@+id/profile_buttons_layout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/profile_unfriend_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:textColorPrimaryInverse"
+                    android:elevation="4dp"
+                    android:outlineProvider="background"
+                    android:stateListAnimator="@null"
+                    android:text="Unfriend"
+                    android:textAllCaps="false" />
+
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/profile_send_message_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:textColorPrimaryInverse"
+                    android:elevation="4dp"
+                    android:stateListAnimator="@null"
+                    android:text="Send message"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <include layout="@layout/preference_item_status" />
+
+            <include layout="@layout/preference_item_email" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="64dp"
+                android:background="@drawable/gradient_button"
+                android:elevation="4dp"
+                android:minWidth="200dp"
+                android:stateListAnimator="@null"
+                android:text="Sign out"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

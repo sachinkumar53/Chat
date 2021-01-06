@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_bubble_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:paddingStart="8dp"
+        android:id="@+id/popup_bubble_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:paddingEnd="10dp"
+        android:id="@+id/popup_bubble_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:text="Jump to last"
+        android:textColor="@android:color/white" />
+</LinearLayout>

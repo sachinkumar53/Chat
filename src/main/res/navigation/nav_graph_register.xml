@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.sachin.app.chat.ui.FirstRegisterFragment"
+        tools:layout="@layout/fragment_register_first" />
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.sachin.app.chat.ui.SecondRegisterFragment"
+        tools:layout="@layout/fragment_register_second" />
+</navigation>

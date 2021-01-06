@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar_color"
+            android:minHeight="?attr/actionBarSize"
+            app:titleMarginStart="24dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image_main"
+                android:layout_width="@dimen/profile_image_size_small"
+                android:layout_height="@dimen/profile_image_size_small"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:transitionName="@string/transition_shared_profile_image"
+                app:shapeAppearanceOverlay="@style/CircleImageView"
+                tools:src="@drawable/default_avatar" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_main"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        app:elevation="1dp"
+        app:itemBackground="@color/surface_color"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_main_bottom_navigation" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

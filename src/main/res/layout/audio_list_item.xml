@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/radio_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:minHeight="?attr/listPreferredItemHeight">
+
+    <RadioButton
+        android:id="@+id/audio_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/audio_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Faded - Alan walker"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/audio_artist"
+        app:layout_constraintEnd_toStartOf="@+id/audio_play_pause_button"
+        app:layout_constraintStart_toEndOf="@+id/audio_radioButton"
+        app:layout_constraintTop_toTopOf="@+id/audio_radioButton" />
+
+    <TextView
+        android:id="@+id/audio_artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Alan walker"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/audio_details"
+        app:layout_constraintEnd_toEndOf="@+id/audio_title"
+        app:layout_constraintStart_toStartOf="@+id/audio_title"
+        app:layout_constraintTop_toBottomOf="@+id/audio_title" />
+
+    <TextView
+        android:id="@+id/audio_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="12:48 . 12.48 MB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio_radioButton"
+        app:layout_constraintEnd_toEndOf="@+id/audio_title"
+        app:layout_constraintStart_toStartOf="@+id/audio_artist"
+        app:layout_constraintTop_toBottomOf="@+id/audio_artist" />
+
+    <ImageButton
+        android:importantForAccessibility="no"
+        android:id="@+id/audio_play_pause_button"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_play_circle_filled_24"
+        android:tint="?android:textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/audio_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

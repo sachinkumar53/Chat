@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="gradient_color_1">#36D1DC</color>
+    <color name="gradient_color_2">#5B86E5</color>
+
+    <color name="colorPrimary">@color/material_light_blue_500</color>
+    <color name="colorPrimaryDark">@color/material_grey_50</color>
+    <color name="colorAccent">@color/gradient_color_2</color>
+
+    <color name="color_on_primary">#000000</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+
+    <color name="search_edit_text_bg">@color/material_grey_100</color>
+
+    <color name="color_on_surface">#000000</color>
+
+    <color name="dialog_background_color">@color/white</color>
+
+    <color name="surface_color">@color/material_grey_50</color>
+    <color name="action_bar_color">@color/material_grey_50</color>
+
+    <color name="text_color_secondary">@color/material_grey_700</color>
+
+    <color name="icon_tint_color">@color/material_blue_grey_500</color>
+
+    <color name="popup_bubble_color">#455A64</color>
+
+    <color name="message_chat_bubble_color_out">@color/colorAccent</color>
+
+    <color name="message_chat_bubble_color_in">#EDEDED</color>
+
+    <color name="message_link_text_color">#75F6F6</color>
+
+    <color name="message_text_color_primary_out">@color/white</color>
+    <color name="message_text_color_secondary_out">#B3FAFAFA</color>
+
+    <color name="message_text_color_primary_in">@color/midnight_blue</color>
+    <color name="message_text_color_secondary_in">#AA212121</color>
+
+    <color name="edit_text_background">#EAF3F8</color>
+
+    <color name="edit_text_color">#1B1B1B</color>
+
+    <color name="chat_screen_background">@color/material_grey_50</color>
+
+    <color name="message_text_color_status">@color/material_blue_grey_600</color>
+    <color name="navigation_item_unselected_color">@color/material_blue_grey_400</color>
+
+    <!---____________________Base colors_________________-->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="delete_text_color">#FC5C65</color>
+
+    <color name="material_grey_50" tools:override="true">#FAFAFA</color>
+    <color name="material_grey_100" tools:override="true">#F5F5F5</color>
+    <color name="material_grey_300" tools:override="true">#E0E0E0</color>
+    <color name="material_grey_500">#9E9E9E</color>
+    <color name="material_grey_600" tools:override="true">#757575</color>
+    <color name="material_grey_700">#616161</color>
+    <color name="material_grey_800" tools:override="true">#424242</color>
+    <color name="material_grey_850" tools:override="true">#303030</color>
+    <color name="material_grey_900" tools:override="true">#212121</color>
+
+    <color name="material_light_blue_400">#29B6F6</color>
+    <color name="material_light_blue_500">#03A9F4</color>
+
+    <color name="material_blue_grey_300">#90A4AE</color>
+    <color name="material_blue_grey_400">#78909C</color>
+    <color name="material_blue_grey_500">#607D8B</color>
+    <color name="material_blue_grey_600">#546E7A</color>
+    <color name="material_blue_grey_800" tools:override="true">#37474F</color>
+
+    <color name="wetasphalt">#34495e</color>
+    <color name="midnight_blue">#2c3e50</color>
+</resources>

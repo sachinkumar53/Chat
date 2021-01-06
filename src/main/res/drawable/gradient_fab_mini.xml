@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="-45"
+                android:endColor="#B24592"
+                android:startColor="#F15F79" />
+            <size
+                android:width="@dimen/floating_widget_size"
+                android:height="@dimen/floating_widget_size" />
+        </shape>
+    </item>
+
+</ripple>

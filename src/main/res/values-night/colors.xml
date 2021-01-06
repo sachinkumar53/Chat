@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="action_bar_color">@color/black</color>
+    <color name="surface_color">@color/black</color>
+
+    <color name="color_on_primary">@color/material_grey_50</color>
+    <color name="color_on_secondary">@color/black</color>
+    <color name="color_on_surface">@color/material_grey_50</color>
+
+    <color name="icon_tint_color">@color/material_blue_grey_300</color>
+
+    <color name="popup_bubble_color">#263238</color>
+
+    <color name="search_edit_text_bg">@color/material_grey_850</color>
+
+    <color name="dialog_background_color">@color/material_grey_850</color>
+
+    <color name="text_color_secondary">@color/material_grey_500</color>
+
+    <color name="message_chat_bubble_color_out">#496AB5</color>
+    <color name="message_chat_bubble_color_in">#303030</color>
+
+    <color name="message_text_color_primary_in">#FBFBFB</color>
+    <color name="message_text_color_secondary_in">#AAFBFBFB</color>
+
+    <color name="message_text_color_primary_out">#FBFBFB</color>
+    <color name="message_text_color_secondary_out">#AAFBFBFB</color>
+
+    <color name="edit_text_background">#3A3A3A</color>
+    <color name="edit_text_color">#E6E6E6</color>
+
+    <color name="chat_screen_background">@color/black</color>
+
+    <color name="message_text_color_status">@color/material_blue_grey_300</color>
+
+</resources>

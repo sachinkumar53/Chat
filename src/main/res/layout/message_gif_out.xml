@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        app:placeholderImage="@drawable/gif_pressed_overlay"
+        android:id="@+id/message_gif"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="16dp"
+        app:actualImageScaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/chat_bubble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/chat_bubble_out"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/message_gif"
+        app:layout_constraintTop_toBottomOf="@id/message_gif">
+
+        <include layout="@layout/reply_layout_in" />
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:maxWidth="@dimen/chat_bubble_max_width"
+            android:textColor="@color/message_text_color_primary_out"
+            android:textColorLink="@color/message_link_text_color"
+            android:textSize="@dimen/message_text_size_primary"
+            tools:text="Some incoming chat message" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:textColor="@color/message_text_color_status"
+        android:textSize="@dimen/message_text_size_status"
+        app:layout_constraintEnd_toEndOf="@+id/chat_bubble_layout"
+        app:layout_constraintTop_toBottomOf="@+id/chat_bubble_layout"
+        tools:text="12:48" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:layout_width="@dimen/floating_widget_size"
+    android:layout_height="@dimen/floating_widget_size"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_fab_mini"
+    android:elevation="8dp">
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone" />
+</FrameLayout>

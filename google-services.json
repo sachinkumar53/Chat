@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "664022401608",
+    "firebase_url": "https://chat-app-83a95.firebaseio.com",
+    "project_id": "chat-app-83a95",
+    "storage_bucket": "chat-app-83a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664022401608:android:796a031ebcecef93dfce7d",
+        "android_client_info": {
+          "package_name": "com.sachin.app.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664022401608-c2e21lkdsh0mhl4obqhpcpa9mqh5n0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9RKZBAPUtbrSaKczmNXBus0taDCQjcmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664022401608-c2e21lkdsh0mhl4obqhpcpa9mqh5n0l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
